@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomPlaceholderTVC" rowHeight="229" id="KGk-i7-Jjw" customClass="CustomPlaceholderTVC" customModule="Placeholder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="229"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="229"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="NZ3-iE-0Dd">
+                        <rect key="frame" x="34.5" y="12.5" width="275" height="204"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="1fa-YD-4Tk">
+                                <rect key="frame" x="82.5" y="0.0" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="6IV-AH-Bd7"/>
+                                    <constraint firstAttribute="width" secondItem="1fa-YD-4Tk" secondAttribute="height" multiplier="1:1" id="Q30-Gm-W5P"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add item in the cart to place an order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV4-yL-RXU">
+                                <rect key="frame" x="0.0" y="128" width="275" height="14"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uB-zZ-fWr">
+                                <rect key="frame" x="37.5" y="160" width="200" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0Ph-rL-hLL"/>
+                                    <constraint firstAttribute="width" constant="200" id="rly-2P-se1"/>
+                                </constraints>
+                                <state key="normal" title="Start Shopping">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendPlaceholderAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fuY-46-7t4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NZ3-iE-0Dd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UKL-HP-DiA"/>
+                    <constraint firstItem="NZ3-iE-0Dd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eu5-Nb-aDN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="d" destination="8uB-zZ-fWr" id="wFg-tw-pUl"/>
+                <outlet property="dd" destination="1fa-YD-4Tk" id="GSE-xf-gPR"/>
+                <outlet property="placeholderImageView" destination="1fa-YD-4Tk" id="UUA-nI-Aaw"/>
+                <outlet property="subtitleLabel" destination="EV4-yL-RXU" id="dvH-Oa-58c"/>
+            </connections>
+            <point key="canvasLocation" x="86.956521739130437" y="159.04017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cart" width="156" height="159"/>
+    </resources>
+</document>
